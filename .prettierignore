@@ -1,0 +1,5 @@
+# Include the changelog file, which is automatically generated
+CHANGELOG.md
+
+# Include the docs folder, which is automatically generated
+docs/

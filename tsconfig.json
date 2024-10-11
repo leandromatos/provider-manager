@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // Basic Options
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["ESNext"],
+    "outDir": "./lib",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    // Module Resolution Options
+    "moduleResolution": "NodeNext",
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "types": ["reflect-metadata", "node"],
+
+    // Emit Options
+    "declaration": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+
+    // Experimental Options
+    "experimentalDecorators": true,
+
+    // Additional Checks
+    "skipLibCheck": true,
+
+    // Strict Type-Checking Options
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "docs", "lib"],
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true
+  }
+}

@@ -1,0 +1,6 @@
+# run lint-staged to check for linting errors
+yarn lint-staged --verbose
+# compile the code
+yarn compile
+# run tests
+yarn test

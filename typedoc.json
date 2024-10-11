@@ -1,0 +1,20 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "commentStyle": "jsdoc",
+  "plugin": ["typedoc-plugin-missing-exports"],
+  "entryPoints": ["./src/main.ts"],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "categorizeByGroup": false,
+  "excludeExternals": true,
+  "sourceLinkExternal": true,
+  "hideGenerator": true,
+  "visibilityFilters": {
+    "protected": false,
+    "private": false,
+    "inherited": true,
+    "external": false
+  }
+}
