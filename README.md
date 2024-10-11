@@ -1,6 +1,12 @@
-# Provider Manager
+# Provider Manager 📦
 
-`ProviderManager` is a lightweight dependency injection container designed to manage class constructors and factory functions. It allows you to register and resolve dependencies easily and supports both class-based providers and factory-based providers, giving you flexibility in how you handle your dependencies.
+[![npm](https://img.shields.io/npm/v/@leandromatos/provider-manager?style=flat-square)](https://www.npmjs.com/package/@leandromatos/provider-manager)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/publish-package.yaml?style=flat-square)](https://github.com/leandromatos/provider-manager/actions/workflows/publish-package.yaml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/docs.yaml?style=flat-square)](https://github.com/leandromatos/provider-manager/actions/workflows/docs.yaml)
+[![Codecov](https://img.shields.io/codecov/c/github/leandromatos/provider-manager?style=flat-square)](https://github.com/leandromatos/provider-manager)
+[![GitHub](https://img.shields.io/github/license/leandromatos/provider-manager?style=flat-square)](https://github.com/leandromatos/provider-manager/blob/main/LICENSE)
+
+**Provider Manager** is a lightweight dependency injection container designed to manage class constructors and factory functions. It allows you to register and resolve dependencies easily and supports both class-based providers and factory-based providers, giving you flexibility in how you handle your dependencies.
 
 ## Installation
 
