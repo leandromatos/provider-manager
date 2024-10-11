@@ -196,8 +196,8 @@ logger.log('Hello from Logger')
 #### Resolving a Factory-based Provider with String Identifier
 
 ```ts
-const dbConnection = providerManager.get('MAIN_DATABASE')
-dbConnection.connect()
+const mainDatabaseConnection = providerManager.get('MAIN_DATABASE')
+mainDatabaseConnection.connect()
 ```
 
 #### Resolving a Factory-based Provider without Identifier
@@ -226,8 +226,8 @@ const providerManager = new ProviderManager()
 providerManager
   .registerProvider(Logger) // Class-based provider
   .registerProvider(() => new DatabaseConnection('postgresql://main-database:5432'), 'MAIN_DATABASE') // Factory-based provider with identifier
-  .registerProvider(() => new DatabaseConnection('postgresql://another-database:5432'), 'ANOTHER_DATABASE') // String-based identifier
-  .registerProvider(ConfigService) // Factory without identifier
+  .registerProvider(() => new DatabaseConnection('postgresql://another-database:5432'), 'ANOTHER_DATABASE') // Factory-based provider with identifier
+  .registerProvider(ConfigService) // Factory-based provider without identifier
   .registerProvider(UserService) // Class-based provider with dependencies
 
 // Resolve providers
