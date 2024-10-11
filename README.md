@@ -1,8 +1,8 @@
 # Provider Manager 📦
 
 [![npm](https://img.shields.io/npm/v/@leandromatos/provider-manager?style=flat-square)](https://www.npmjs.com/package/@leandromatos/provider-manager)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/publish-package.yaml?style=flat-square)](https://github.com/leandromatos/provider-manager/actions/workflows/publish-package.yaml)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/docs.yaml?style=flat-square)](https://github.com/leandromatos/provider-manager/actions/workflows/docs.yaml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/publish-package.yaml?style=flat-square&label=build)](https://github.com/leandromatos/provider-manager/actions/workflows/publish-package.yaml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leandromatos/provider-manager/docs.yaml?style=flat-square&label=docs)](https://github.com/leandromatos/provider-manager/actions/workflows/docs.yaml)
 [![Codecov](https://img.shields.io/codecov/c/github/leandromatos/provider-manager?style=flat-square)](https://github.com/leandromatos/provider-manager)
 [![GitHub](https://img.shields.io/github/license/leandromatos/provider-manager?style=flat-square)](https://github.com/leandromatos/provider-manager/blob/main/LICENSE)
 
