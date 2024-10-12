@@ -107,6 +107,9 @@ class UserService {
     this.logger.log(`Creating user: ${name} for ${this.configService.appName}`)
   }
 }
+
+// Initialize the ProviderManager
+const providerManager = new ProviderManager()
 ```
 
 ### Registering Providers
@@ -185,7 +188,10 @@ class UserService {
 }
 
 // Register a class-based provider with dependencies
-providerManager.registerProvider(UserService)
+providerManager
+  .registerProvider(Logger)
+  .registerProvider(ConfigService)
+  .registerProvider(UserService)
 ```
 
 ### Resolving Providers
@@ -228,7 +234,6 @@ Here's a summary example that demonstrates registering and resolving multiple ty
 
 ```ts
 const providerManager = new ProviderManager()
-
 providerManager
   .registerProvider(Logger) // Class-based provider
   .registerProvider(() => new DatabaseConnection('postgresql://main-database:5432'), 'MAIN_DATABASE') // Factory-based provider with identifier
