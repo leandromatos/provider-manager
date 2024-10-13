@@ -1,19 +1,14 @@
 {
   "name": "@leandromatos/provider-manager",
-  "version": "0.0.0-snapshot.20241013.5",
+  "version": "0.0.0-snapshot.20241013.6",
   "description": "Provider Manager",
   "license": "MIT",
   "files": [
     "lib/**",
     "LICENSE"
   ],
-  "exports": {
-    ".": {
-      "import": "./lib/main.js",
-      "require": "./lib/main.js",
-      "types": "./lib/main.d.ts"
-    }
-  },
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "scripts": {
     "build": "yarn clean:build && yarn compile && yarn resolve-alias",
     "clean:docs": "rm -rf docs/*",
