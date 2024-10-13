@@ -1,6 +1,6 @@
 {
   "name": "@leandromatos/provider-manager",
-  "version": "0.0.0-snapshot.20241013.3",
+  "version": "0.0.0-snapshot.20241013.4",
   "description": "Provider Manager",
   "license": "MIT",
   "files": [
@@ -9,9 +9,9 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/provider-manager/main.js",
-      "require": "./lib/provider-manager/main.js",
-      "types": "./lib/provider-manager/main.d.ts"
+      "import": "./lib/main.js",
+      "require": "./lib/main.js",
+      "types": "./lib/main.d.ts"
     }
   },
   "scripts": {
@@ -47,7 +47,7 @@
     "reflect-metadata": "^0.2.2",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.10",
-    "typedoc": "^0.26.8",
+    "typedoc": "^0.26.9",
     "typedoc-plugin-missing-exports": "^3.0.0",
     "typescript": "^5.6.3",
     "vitest": "^2.1.2",
