@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 
-import { Constructor, Factory, Metadata, Provider } from '@/provider-manager/types'
+import { Constructor, Factory, Metadata, Provider } from '@/types'
 
 /**
  * A class responsible for managing dependencies and resolving them through

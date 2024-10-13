@@ -1,2 +1,2 @@
-export * from '@/provider-manager/provider-manager'
-export * from '@/provider-manager/types'
+export * from '@/provider-manager'
+export * from '@/types'

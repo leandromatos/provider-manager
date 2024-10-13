@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 
-import { Metadata, Provider } from '@/provider-manager/types'
+import { Metadata, Provider } from '@/types'
 
 /**
  * A decorator used to inject dependencies into constructor parameters.
