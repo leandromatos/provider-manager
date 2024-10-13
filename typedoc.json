@@ -2,7 +2,7 @@
   "$schema": "https://typedoc.org/schema.json",
   "commentStyle": "jsdoc",
   "plugin": ["typedoc-plugin-missing-exports"],
-  "entryPoints": ["./src/main.ts"],
+  "entryPoints": ["./src/index.ts"],
   "navigation": {
     "includeCategories": true,
     "includeGroups": true
