@@ -6,6 +6,6 @@ import { config } from '@leandromatos/eslint-config'
 export default [
   ...config,
   {
-    ignores: ['docs', 'drizzle.config.ts', 'lib'],
+    ignores: ['docs', 'lib'],
   },
 ]
