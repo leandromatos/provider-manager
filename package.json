@@ -1,6 +1,6 @@
 {
   "name": "@leandromatos/provider-manager",
-  "version": "0.0.0-snapshot.20241013.2",
+  "version": "0.0.0-snapshot.20241013.3",
   "description": "Provider Manager",
   "license": "MIT",
   "files": [
@@ -9,9 +9,9 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/provider-manager/index.js",
-      "require": "./lib/provider-manager/index.js",
-      "types": "./lib/provider-manager/index.d.ts"
+      "import": "./lib/provider-manager/main.js",
+      "require": "./lib/provider-manager/main.js",
+      "types": "./lib/provider-manager/main.d.ts"
     }
   },
   "scripts": {
