@@ -1,8 +1,8 @@
 {
   "name": "@leandromatos/provider-manager",
-  "version": "0.0.0-snapshot.20241014.3",
+  "version": "0.0.0-snapshot.20241014.4",
   "description": "Provider Manager",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "./lib/**",
     "LICENSE"
