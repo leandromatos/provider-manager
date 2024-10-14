@@ -1,6 +1,6 @@
 {
   "name": "@leandromatos/provider-manager",
-  "version": "0.0.0-snapshot.20241013.9",
+  "version": "0.0.0-snapshot.20241014.1",
   "description": "Provider Manager",
   "license": "UNLICENSED",
   "files": [
@@ -12,6 +12,16 @@
       "import": "./lib/index.js",
       "require": "./lib/index.js",
       "types": "./lib/index.d.ts"
+    },
+    "./decorators": {
+      "import": "./lib/decorators/index.js",
+      "require": "./lib/decorators/index.js",
+      "types": "./lib/decorators/index.d.ts"
+    },
+    "./types": {
+      "import": "./lib/types/index.js",
+      "require": "./lib/types/index.js",
+      "types": "./lib/types/index.d.ts"
     }
   },
   "scripts": {

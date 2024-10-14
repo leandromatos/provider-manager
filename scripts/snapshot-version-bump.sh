@@ -1,26 +1,33 @@
 #!/bin/bash
 
-# Define o caminho para o package.json
+# Path to the package.json file
 PACKAGE_JSON="package.json"
 
-# Obtém a data no formato YYYYMMDD
+# Get today's date in the format YYYYMMDD
 TODAY=$(date +%Y%m%d)
 
-# Extrai a versão atual do package.json
+# Extract the current version from package.json
 CURRENT_VERSION=$(cat $PACKAGE_JSON | grep '"version"' | awk -F '"' '{print $4}')
+echo "Current version: $CURRENT_VERSION"
 
-# Define a base da nova versão
+# Define the base for the new version (without the snapshot number)
 VERSION_BASE="${CURRENT_VERSION%-snapshot.*}-snapshot.${TODAY}"
 
-# Encontra o número do último snapshot do dia, se houver, e incrementa
-LAST_SNAPSHOT=$(grep -o "${VERSION_BASE}\.[0-9]*" $PACKAGE_JSON | awk -F '.' '{print $NF}' | sort -nr | head -n1)
-NEXT_SNAPSHOT=$((LAST_SNAPSHOT + 1))
+# Check if today's snapshot already exists in the current version
+if [[ $CURRENT_VERSION == *"$TODAY"* ]]; then
+  # Extract the last snapshot number and increment it
+  LAST_SNAPSHOT=$(echo $CURRENT_VERSION | awk -F '.' '{print $NF}')
+  NEXT_SNAPSHOT=$((LAST_SNAPSHOT + 1))
+else
+  # If it's a new day, reset the snapshot counter to 1
+  NEXT_SNAPSHOT=1
+fi
 
-# Nova versão do snapshot
+# Define the new snapshot version
 NEW_VERSION="${VERSION_BASE}.${NEXT_SNAPSHOT}"
 
-# Atualiza o package.json com a nova versão
+# Update the version in package.json with the new snapshot version
 sed -i '' "s/\"version\": \"[^\"]*\"/\"version\": \"$NEW_VERSION\"/" $PACKAGE_JSON
 
-# Imprime a nova versão para a saída padrão
+# Output the new version to the console for reference
 echo "Snapshot version updated to \"v$NEW_VERSION\". Use this for your git tag."
